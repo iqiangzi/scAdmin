@@ -23,6 +23,7 @@ function check_verify($code, $id = ''){
     return $verify->check($code, $id);
 }
 
+//md5 加密密码
 function getMd5($password){
 	return md5($password . C('PASSWORD'));
 }
@@ -34,4 +35,28 @@ function getMd5($password){
 function is_login(){
     $mid = session('mid');
     return $mid ? $mid : 0;
+}
+
+
+function tree($list, $pid=0, $lev=1){
+	$tmpArr = array();
+	foreach ($list as $k => $v) {
+		if ($v['pid'] == $pid) {
+			$v['lev'] = $lev;
+			$tmpArr[] = $v;
+			
+			$tmpArr = array_merge($tmpArr, tree($list, $v['id'], $lev+1));
+		}
+	}
+	
+	return $tmpArr;
+} 
+
+function showStatus($status){
+	if ($status == 1) {
+		$str = '<i style="color:green" class="fa fa-check" aria-hidden="true"></i>';
+	} else {
+		$str = '<i style="color:red" class="fa fa-times" aria-hidden="true"></i>';
+	}
+	return $str;
 }

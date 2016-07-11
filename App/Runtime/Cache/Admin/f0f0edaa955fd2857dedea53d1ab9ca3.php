@@ -80,13 +80,14 @@ $(function() {
 
 		var data = {
 						username: $('#j_username').val(),
-						password: $('#j_username').val(),
+						password: $('#j_password').val(),
 						captcha: $('#j_captcha').val()
 					}
 		$.post("<?php echo U('Login/index');?>", data, function(r) {
 			if (r.status == 0) {
 				$('#errorMsg').html(r.msg);
 				$('.alert').show('300');
+				changeCode();
 				return false;
 			} else {
 				window.location.href = r.data.url; 
