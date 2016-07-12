@@ -12,7 +12,7 @@ class AdminController extends Controller{
 	}
 
 	public function getMenu(){
-		$list = D('Category')->getTree(1);
+		$list = D('Category')->getTree(1, 1);
 		return $list;
 	}
 } 

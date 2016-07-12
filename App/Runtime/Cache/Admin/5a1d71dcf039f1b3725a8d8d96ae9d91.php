@@ -2,7 +2,7 @@
          
     <button type="button" class="btn btn-green" data-icon="plus" data-toggle="dialog"
     data-options="{id:'sc-addMenu', url:'<?php echo U('Menu/add');?>', title:'添加菜单'}">添加</button>&nbsp;
-    <button type="button" class="btn btn-orange" data-icon="undo" onclick="$(this).navtab('reload', true);" >刷新</button>
+    <button type="button" class="btn btn-orange" data-icon="undo" onclick="$(this).navtab('refresh');" >刷新</button>
 </div>
 
 <div class="bjui-pageContent tableContent">
@@ -31,8 +31,8 @@
                 <td><?php echo (showStatus($v["status"])); ?></td>
                 <td><?php echo ($v["sort"]); ?></td>
                 <td>
-                    <a href="form.html?id=1" class="btn btn-green" data-toggle="navtab" data-id="form" data-reload-warn="本页已有打开的内容，确定将刷新本页内容，是否继续？" data-title="编辑-孙悟空">编辑</a>
-                    <a href="ajaxDone2.html" class="btn btn-red" data-toggle="doajax" data-confirm-msg="确定要删除该行信息吗？">删</a>
+                    <button type="button" class="btn btn-green" data-toggle="dialog" data-options="{id:'sc-editMenu<?php echo ($v["id"]); ?>', url:'<?php echo U('Menu/edit');?>?id=<?php echo ($v["id"]); ?>', title:'编辑菜单'}">编辑</button>
+                    <a href="<?php echo U('Menu/del');?>?id=<?php echo ($v["id"]); ?>" class="btn btn-red" data-toggle="doajax" data-confirm-msg="确定要删除该行信息吗？">删</a>
                 </td>
             </tr><?php endforeach; endif; ?>
         </tbody>

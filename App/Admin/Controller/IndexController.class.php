@@ -16,4 +16,8 @@ class IndexController extends AdminController {
 
     	$this->display();
     }
+
+    public function error(){
+    	$this->display('404');
+    }
 }

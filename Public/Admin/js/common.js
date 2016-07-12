@@ -1,4 +1,4 @@
-$(document).ready(function() {
+/*$(document).ready(function() {
 	//添加事件
 	$(document).on('click', '.sc-submit', function() {
 		var url = $(this).attr('sc-url'),
@@ -9,11 +9,12 @@ $(document).ready(function() {
 				BJUI.alertmsg('warn', r.msg);
 			} else {
 				BJUI.alertmsg('ok', r.msg);
-				$(this).navtab('reload', true);
+				close('sc-editMenu4');
+				$(this).navtab('refresh');
 			}
 		},'json');
 
 	});
 
 });
-
+*/

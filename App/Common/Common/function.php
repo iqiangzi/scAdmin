@@ -2,18 +2,19 @@
 
 /**
  * 返回 json 数据
- * @param  [int] $status    0:失败，1:成功
+ * @param  [int] $status    300:失败，200:成功
  * @param  [string] $msg    返回信息
  * @param  [array] $data    其他信息
  * @return [json]         
  */
-function show($status, $msg, $data=array()){
+function show($status, $msg, $closeCurrent=false, $data=array()){
+	
 	$tmpArr = array(
-			'status' => $status,
-			'msg'    => $msg,
-			'data'   => $data
+			'statusCode' => $status,
+			'message'    => $msg,
+			'closeCurrent' => $closeCurrent
 		);
-
+	$tmpArr = array_merge($tmpArr, $data);
 	exit(json_encode($tmpArr));
 }
 
@@ -37,11 +38,17 @@ function is_login(){
     return $mid ? $mid : 0;
 }
 
-
-function tree($list, $pid=0, $lev=1){
+/**
+ * 读取子孙树
+ * @param  array   $list 栏目列表
+ * @param  integer $pid  父栏目ID
+ * @param  integer $lev  分级
+ * @return array
+ */
+function tree($list, $id=0, $lev=1){
 	$tmpArr = array();
 	foreach ($list as $k => $v) {
-		if ($v['pid'] == $pid) {
+		if ($v['pid'] == $id) {
 			$v['lev'] = $lev;
 			$tmpArr[] = $v;
 			
@@ -51,6 +58,24 @@ function tree($list, $pid=0, $lev=1){
 	
 	return $tmpArr;
 } 
+
+/**
+ * 获取族谱数
+ * @param  [array] $list 栏目列表
+ * @param  [integer] $id   栏目ID
+ * @return [array]
+ */
+function ptree($list, $id) {
+	$tmpArr = array();
+	foreach ($list as $v) {
+		if ($v['id'] == $id) {
+			$tmpArr[] = $v;
+
+			$tmpArr = array_merge($tmpArr, ptree($list, $v['pid']));
+		}
+	}
+	return $tmpArr;
+}
 
 function showStatus($status){
 	if ($status == 1) {
