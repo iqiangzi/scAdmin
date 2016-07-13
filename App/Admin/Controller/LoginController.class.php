@@ -11,12 +11,12 @@ class LoginController extends Controller{
             $password = I('post.password', '', 'trim');
             $captcha  = I('post.captcha', '', 'trim');
             if (!$username && !$password) {
-                return show(0, '用户名或密码不能为空!');
+                return show(300, '用户名或密码不能为空!');
             }
 
             //验证码检验
             if (!check_verify($captcha)) {
-                return show(0, '验证码错误!');
+                return show(300, '验证码错误!');
             }
             $map = array(
                     'username' => $username,
@@ -26,11 +26,11 @@ class LoginController extends Controller{
             $result = M('manager')->where($map)->find();
             
             if (!$result) {
-                return show(0, '用户名或密码错误!');
+                return show(300, '用户名或密码错误!');
             } else {
                 session('mid', $result['id']);
                 session('userInfo', $result);
-                return show(1, '登录成功', array('url'=>U('Index/index')));
+                return show(200, '登录成功', false, array('url'=>U('Index/index')));
             }
             
         } else {

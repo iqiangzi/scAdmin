@@ -39,7 +39,7 @@ class MenuController extends AdminController{
 			if (!$result) {
 				return show(300, '操作菜单失败');
 			} else {
-				return show(200, '操作菜单成功');
+				return show(200, '操作菜单成功', true);
 			}
 		} else {
 			$menuList = $this->model->getTree(1);

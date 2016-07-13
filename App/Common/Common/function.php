@@ -12,7 +12,7 @@ function show($status, $msg, $closeCurrent=false, $data=array()){
 	$tmpArr = array(
 			'statusCode' => $status,
 			'message'    => $msg,
-			'closeCurrent' => $closeCurrent
+			'closeCurrent' => $closeCurrent,
 		);
 	$tmpArr = array_merge($tmpArr, $data);
 	exit(json_encode($tmpArr));

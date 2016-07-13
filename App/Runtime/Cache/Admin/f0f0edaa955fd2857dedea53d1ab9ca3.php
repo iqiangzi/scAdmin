@@ -84,13 +84,13 @@ $(function() {
 						captcha: $('#j_captcha').val()
 					}
 		$.post("<?php echo U('Login/index');?>", data, function(r) {
-			if (r.status == 0) {
-				$('#errorMsg').html(r.msg);
+			if (r.statusCode == 300) {
+				$('#errorMsg').html(r.message);
 				$('.alert').show('300');
 				changeCode();
 				return false;
 			} else {
-				window.location.href = r.data.url; 
+				window.location.href = r.url; 
 			}
 		},'json');
         
