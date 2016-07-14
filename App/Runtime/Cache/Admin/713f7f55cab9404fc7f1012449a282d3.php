@@ -1,4 +1,4 @@
-<script>
+<?php if (!defined('THINK_PATH')) exit();?><script>
     function pic_upload_success(file, data) {
         var json = $.parseJSON(data)
         
@@ -10,16 +10,14 @@
     }
 </script>
 <div class="bjui-pageContent">
-        <form action="__SELF__" method="post" data-toggle="ajaxform" data-reload-navtab="true">
+        <form action="/index.php/Admin/User/edit.html?id=7&amp;_=1468480504242" method="post" data-toggle="ajaxform" data-reload-navtab="true">
             <table class="table table-condensed table-hover" width="100%">
                 <tbody>
                     <tr>
                         <td>
                             <label class="control-label x85">用户组：</label>
                             <select name="roles_id[]" data-toggle="selectpicker" multiple="true" data-width="200">
-                                <foreach name="rolesList" item="v">
-                                    <option value="{$v.id}">{$v.name}</option>
-                                </foreach>
+                                <?php if(is_array($rolesList)): foreach($rolesList as $key=>$v): ?><option value="<?php echo ($v["id"]); ?>" <?php if(in_array($v['id'], explode(',', $info['roles_id']))): ?>selected<?php endif; ?> ><?php echo ($v["name"]); ?></option><?php endforeach; endif; ?>
                             </select>
                         </td>
                         <td>
@@ -32,11 +30,11 @@
                     <tr>
                         <td>
                             <label class="control-label x85">用户名：</label>
-                            <input type="text" name="username">
+                            <input type="text" name="username" value="<?php echo ($info["username"]); ?>">
                         </td>
                         <td>
                             <label class="control-label x85">昵称/姓名：</label>
-                            <input type="text" name="nickname">
+                            <input type="text" name="nickname" value="<?php echo ($info["nickname"]); ?>">
                         </td>
                         
                     </tr>
@@ -53,11 +51,11 @@
                     <tr>
                         <td>
                             <label class="control-label x85">邮箱：</label>
-                            <input type="text" name="email">
+                            <input type="text" name="email" value="<?php echo ($info["email"]); ?>">
                         </td>
                         <td>
                             <label class="control-label x85">手机：</label>
-                            <input type="text" name="mobile">
+                            <input type="text" name="mobile" value="<?php echo ($info["mobile"]); ?>">
                         </td>
                     </tr>
                     
@@ -65,7 +63,7 @@
                         <td>
                             <label class="control-label x85">头像：</label>
                             <div style="display: inline-block; vertical-align: middle;">
-                                <div id="sc_manager_pic_up" data-toggle="upload" data-uploader="{:U('Image/uploadOne')}" 
+                                <div id="sc_manager_pic_up" data-toggle="upload" data-uploader="<?php echo U('Image/uploadOne');?>" 
                                     data-file-size-limit="1024000000"
                                     data-file-type-exts="*.jpg;*.png;*.gif;*.mpg"
                                     data-multi="false"
@@ -84,7 +82,7 @@
                     <tr>
                         <td colspan="2">
                             <label class="control-label x85">备注：</label>
-                            <textarea name="remark" data-toggle="autoheight" cols="30"></textarea>
+                            <textarea name="remark" data-toggle="autoheight" cols="30"><?php echo ($info["remark"]); ?></textarea>
                         </td>
                     </tr>
                 </tbody>

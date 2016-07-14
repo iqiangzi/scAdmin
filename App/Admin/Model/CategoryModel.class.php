@@ -1,15 +1,31 @@
 <?php
+/*
+ * 菜单栏目模型类
+ * Auth   : 失策
+ * Time   : 2016年07月12日 
+ * QQ     : 664709989   
+ * Email  : 664709989@qq.com
+ * Site   : http://www.iamgpj.com/
+ */
 namespace Admin\Model;
 use Think\Model;
 
 class CategoryModel extends Model{
+	//模型默认表
 	private $_db;
-
+	
 	public function __construct(){
 		parent::__construct();
 		$this->_db = M('category');
 	}
 
+	/**
+	 * 获取栏目列表
+	 * @param  [int]   $type     1:后台，0:前台
+	 * @param  [int]   $status   1:开启，0:关闭
+	 * @param  [array] $authRule 用户权限
+	 * @return [array]          
+	 */
 	public function getCate($type=null, $status=null, $authRule=array()){
 		$map = array();
 		if (!is_null($type) && in_array($type, array(0, 1))) {
@@ -28,7 +44,14 @@ class CategoryModel extends Model{
 		return $menuList;
 	}
 
-
+	/**
+	 * 获取指定栏目下格式化列表
+	 * @param  [int]    $type      1:后台，0:前台
+	 * @param  [int]    $status    1:开启，0:关闭
+	 * @param  [array]  $authRule  用户权限
+	 * @param  [string] $parent_id 父栏目ID
+	 * @return [array]          
+	 */
 	public function getTree($type=null, $status=null, $authRule=array(), $parent_id=0){
 		
 		$menuList = $this->getCate($type, $status, $authRule);

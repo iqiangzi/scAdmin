@@ -1,13 +1,13 @@
 <?php if (!defined('THINK_PATH')) exit();?><div class="bjui-pageHeader">
-    <form id="pagerForm" data-toggle="ajaxsearch" action="/index.php/Admin/User/index.html?_=1468415376957" method="get">
+    <form id="pagerForm" data-toggle="ajaxsearch" action="/index.php/Admin/User/index.html?_=1468480504238" method="get">
         <input type="hidden" name="pageSize" value="${model.pageSize}">
         <input type="hidden" name="pageCurrent" value="${model.pageCurrent}">
-        <label>用户名/昵称：</label><input type="text" value="" name="name" class="form-control" size="15">&nbsp;    
+        <label>用户名/昵称：</label><input type="text" value="<?php echo ($username); ?>" name="name" class="form-control" size="15">&nbsp;    
         
         <button type="submit" class="btn-default" data-icon="search">查询</button>&nbsp;
         <button type="button" class="btn btn-orange" data-icon="undo" onclick="$(this).navtab('refresh');" >刷新</button>&nbsp;
         <button type="button" class="btn btn-green pull-right" data-icon="plus" data-toggle="dialog"
-        data-options="{id:'sc-addUser', url:'<?php echo U('User/add');?>', title:'添加菜单', height:360}">添加</button>
+        data-options="{id:'sc-addUser', url:'<?php echo U('User/add');?>', title:'添加菜单', width:750, height:400}">添加</button>
     </form>
 </div>
 
@@ -32,15 +32,15 @@
                 <td><?php echo ($v["id"]); ?></td>
                 <td><?php echo ($v["username"]); ?></td>
                 <td><?php echo ($v["nickname"]); ?></td>
-                <td><?php echo ($v["last_login_time"]); ?></td>
+                <td><?php echo (date('Y-m-d',$v["last_login_time"])); ?></td>
                 <td><?php echo ($v["last_login_ip"]); ?></td>
                 <td><?php echo ($v["email"]); ?></td>
-                <td><?php echo ($v["create_time"]); ?></td>
-                <td><?php echo ($v["update_time"]); ?></td>
+                <td><?php echo (date('Y-m-d',$v["create_time"])); ?></td>
+                <td><?php echo (date('Y-m-d',$v["update_time"])); ?></td>
                 <td><?php echo (showStatus($v["status"])); ?></td>
                 <td>
-                    <button type="button" class="btn btn-green" data-toggle="dialog" data-options="{id:'sc-editMenu<?php echo ($v["id"]); ?>', url:'<?php echo U('Menu/edit');?>?id=<?php echo ($v["id"]); ?>', title:'编辑菜单'}">编辑</button>
-                    <a href="<?php echo U('Menu/del');?>?id=<?php echo ($v["id"]); ?>" class="btn btn-red" data-toggle="doajax" data-confirm-msg="确定要删除该行信息吗？">删</a>
+                    <button type="button" class="btn btn-green" data-toggle="dialog" data-options="{id:'sc-editUser<?php echo ($v["id"]); ?>', url:'<?php echo U('User/edit');?>?id=<?php echo ($v["id"]); ?>', title:'编辑菜单', width:750, height:400}">编辑</button>
+                    <a href="<?php echo U('User/del');?>?id=<?php echo ($v["id"]); ?>" class="btn btn-red" data-toggle="doajax" data-confirm-msg="确定要删除该行信息吗？">删</a>
                 </td>
             </tr><?php endforeach; endif; ?>
         </tbody>

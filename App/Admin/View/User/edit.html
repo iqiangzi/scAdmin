@@ -18,7 +18,7 @@
                             <label class="control-label x85">用户组：</label>
                             <select name="roles_id[]" data-toggle="selectpicker" multiple="true" data-width="200">
                                 <foreach name="rolesList" item="v">
-                                    <option value="{$v.id}">{$v.name}</option>
+                                    <option value="{$v.id}" <if condition="in_array($v['id'], explode(',', $info['roles_id']))">selected</if> >{$v.name}</option>
                                 </foreach>
                             </select>
                         </td>
@@ -32,11 +32,11 @@
                     <tr>
                         <td>
                             <label class="control-label x85">用户名：</label>
-                            <input type="text" name="username">
+                            <input type="text" name="username" value="{$info.username}">
                         </td>
                         <td>
                             <label class="control-label x85">昵称/姓名：</label>
-                            <input type="text" name="nickname">
+                            <input type="text" name="nickname" value="{$info.nickname}">
                         </td>
                         
                     </tr>
@@ -53,11 +53,11 @@
                     <tr>
                         <td>
                             <label class="control-label x85">邮箱：</label>
-                            <input type="text" name="email">
+                            <input type="text" name="email" value="{$info.email}">
                         </td>
                         <td>
                             <label class="control-label x85">手机：</label>
-                            <input type="text" name="mobile">
+                            <input type="text" name="mobile" value="{$info.mobile}">
                         </td>
                     </tr>
                     
@@ -84,7 +84,7 @@
                     <tr>
                         <td colspan="2">
                             <label class="control-label x85">备注：</label>
-                            <textarea name="remark" data-toggle="autoheight" cols="30"></textarea>
+                            <textarea name="remark" data-toggle="autoheight" cols="30">{$info.remark}</textarea>
                         </td>
                     </tr>
                 </tbody>

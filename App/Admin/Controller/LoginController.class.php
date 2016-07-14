@@ -23,8 +23,8 @@ class LoginController extends Controller{
                     'password' => getMd5($password),
                     'status'   => 1
                 );
-            $result = M('manager')->where($map)->find();
             
+            $result = M('manager')->where($map)->find();
             if (!$result) {
                 return show(300, '用户名或密码错误!');
             } else {
@@ -34,6 +34,7 @@ class LoginController extends Controller{
             }
             
         } else {
+            //如果已登录，跳转到主页
             if (is_login()) {
                 $this->redirect('Index/index');
             } else {
