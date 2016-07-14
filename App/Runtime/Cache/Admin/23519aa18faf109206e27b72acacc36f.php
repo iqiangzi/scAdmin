@@ -30,7 +30,7 @@ function S_NodeClick(event, treeId, treeNode) {
 }
 </script>
 <div class="bjui-pageContent">
-        <form action="/index.php/Admin/Roles/add.html?_=1468480504106" data-toggle="ajaxform" data-reload-navtab="true">
+        <form action="/index.php/Admin/Roles/add.html?_=1468502731627" data-toggle="ajaxform" data-reload-navtab="true">
             <p><label class="x85">标题：</label><input type="text" name="name"></p><br>
             <p><label class="x85">用户权限：</label><input type="text" name="menus" id="sc_roles_add" data-toggle="selectztree" size="18" data-tree="#sc_roles_tree_add" readonly><input type="hidden" name="catId" id="catId">
                 <ul id="sc_roles_tree_add" class="ztree hide" data-toggle="ztree" data-expand-all="false" data-check-enable="true" data-on-check="S_NodeCheck" data-on-click="S_NodeClick">

@@ -20,6 +20,7 @@ class UserController extends AdminController{
 
 	//首页-列表
 	public function index(){
+
 		$map = array();
 
 		$name = I('get.name', '', 'trim');
@@ -47,14 +48,25 @@ class UserController extends AdminController{
 			} else {
 				$post['roles_id'] = '';
 			}
-			//print_r($post);return;
+			
 			$data = $this->model->create($post);
 			if (!$data) {
 				return show(300, $this->model->getError());
 			} else {
-				$data['password'] = getMd5($data['password']);
-				$data['create_time'] = time();
-				$result = $this->model->add($data);
+				if ($data['id']) {
+					$data['update_time'] = time();
+					if ($data['password']) {
+						$data['password'] = getMd5($data['password']);
+					} else {
+						unset($data['password']);
+					}
+					$result = $this->model->where(array('id' => intval($data['id'])))->save($data);
+				} else {
+					$data['password'] = getMd5($data['password']);
+					$data['create_time'] = time();
+					$result = $this->model->add($data);
+				}
+
 				if (!$result) {
 					return show(300, '操作失败');
 				} else {

@@ -85,3 +85,12 @@ function showStatus($status){
 	}
 	return $str;
 }
+
+function getAuthRules(){
+	$id = is_login();
+	
+	$roles = M('manager')->field('roles_id')->where(array('id' => $id))->find();
+	$authRules = M('roles')->field('concat(catId) as rules')->where(array('id' => array('in', $roles['roles_id'])))->find();
+	$arr = array_unique(explode(',', $authRules['rules']));
+	return $arr;
+}

@@ -10,7 +10,7 @@
     }
 </script>
 <div class="bjui-pageContent">
-        <form action="/index.php/Admin/User/add.html?_=1468480504210" method="post" data-toggle="ajaxform" data-reload-navtab="true">
+        <form action="/index.php/Admin/User/add.html?_=1468506631997" method="post" data-toggle="ajaxform" data-reload-navtab="true">
             <table class="table table-condensed table-hover" width="100%">
                 <tbody>
                     <tr>
@@ -65,7 +65,7 @@
                             <div style="display: inline-block; vertical-align: middle;">
                                 <div id="sc_manager_pic_up" data-toggle="upload" data-uploader="<?php echo U('Image/uploadOne');?>" 
                                     data-file-size-limit="1024000000"
-                                    data-file-type-exts="*.jpg;*.png;*.gif;*.mpg"
+                                    data-file-type-exts="*.jpg;*.jpeg;*.png;*.gif;*.mpg"
                                     data-multi="false"
                                     data-on-upload-success="pic_upload_success"
                                     data-icon="cloud-upload"></div>

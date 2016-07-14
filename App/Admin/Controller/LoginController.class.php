@@ -25,6 +25,7 @@ class LoginController extends Controller{
                 );
             
             $result = M('manager')->where($map)->find();
+            
             if (!$result) {
                 return show(300, '用户名或密码错误!');
             } else {

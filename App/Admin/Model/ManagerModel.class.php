@@ -15,10 +15,10 @@ class ManagerModel extends Model{
 	//自动验证
 	protected $_validate = array(
 			array('roles_id', 'require', '所属用户组必须'),
-			array('username', 'require', '用户名必须'),
+			array('username', 'require', '用户名必须唯一', 0, 'unique'),
 			array('nickname', 'require', '昵称/姓名必须'),
-			array('password', 'require', '密码必须'),
-			array('repassword','password','确认密码不正确',0,'confirm'),
+			array('password', 'require', '密码必须', 0, '', 1),
+			array('repassword','password','确认密码不正确', 0, 'confirm'),
 			array('email', 'email', '邮箱格式错误', 2),
 			array('mobile','/^1[3|4|5|7|8]\d{9}$/','手机号码错误！', 2, 'regex'),
 			array('status', array(0, 1), '状态所属区间错误', 1, 'in'),

@@ -10,7 +10,7 @@
     }
 </script>
 <div class="bjui-pageContent">
-        <form action="/index.php/Admin/User/edit.html?id=7&amp;_=1468480504242" method="post" data-toggle="ajaxform" data-reload-navtab="true">
+        <form action="<?php echo U('User/add');?>" method="post" data-toggle="ajaxform" data-reload-navtab="true">
             <table class="table table-condensed table-hover" width="100%">
                 <tbody>
                     <tr>
@@ -65,14 +65,15 @@
                             <div style="display: inline-block; vertical-align: middle;">
                                 <div id="sc_manager_pic_up" data-toggle="upload" data-uploader="<?php echo U('Image/uploadOne');?>" 
                                     data-file-size-limit="1024000000"
-                                    data-file-type-exts="*.jpg;*.png;*.gif;*.mpg"
+                                    data-file-type-exts="*.jpg;*.jpeg;*.png;*.gif;*.mpg"
                                     data-multi="false"
                                     data-on-upload-success="pic_upload_success"
                                     data-icon="cloud-upload"></div>
                                 
                             </div>
-                            <input type="hidden" name="avator" value="" id="sc_manager_pic">
-                            <span id="sc_manager_span_pic"></span>
+                            <input type="hidden" name="avator" value="<?php echo ($info["avator"]); ?>" id="sc_manager_pic">
+                            <input type="hidden" name="id" value="<?php echo ($info["id"]); ?>">
+                            <span id="sc_manager_span_pic"><img src="<?php echo ($info["avator"]); ?>" alt="头像" width="100"></span>
                         </td>
                         <td>
                             
