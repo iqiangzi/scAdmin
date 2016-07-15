@@ -6,7 +6,7 @@ function sc_NodeClick(e, treeId, treeNode) {
 }
 </script>
 <div class="bjui-pageContent">
-        <form action="/index.php/Admin/Menu/add.html?_=1468460560501" data-toggle="ajaxform" data-reload-navtab="true">
+        <form action="/index.php/Admin/Menu/add.html?_=1468562393462" data-toggle="ajaxform" data-reload-navtab="true">
             <p><label class="x85">上级菜单：</label><input type="text" id="sc-menuText" data-toggle="selectztree" size="18" data-tree="#sc-menuTree" placeholder="不填写为顶级菜单" readonly>
                 <input type="hidden" name="pid" value="0">
                 <ul id="sc-menuTree" class="ztree hide" data-toggle="ztree" data-on-click="sc_NodeClick">

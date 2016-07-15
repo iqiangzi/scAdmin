@@ -10,7 +10,7 @@
     }
 </script>
 <div class="bjui-pageContent">
-        <form action="/index.php/Admin/User/add.html?_=1468506631997" method="post" data-toggle="ajaxform" data-reload-navtab="true">
+        <form action="/index.php/Admin/User/add.html?_=1468544231751" method="post" data-toggle="ajaxform" data-reload-navtab="true">
             <table class="table table-condensed table-hover" width="100%">
                 <tbody>
                     <tr>

@@ -1,13 +1,15 @@
 <?php if (!defined('THINK_PATH')) exit();?><div class="bjui-pageHeader">
-    <form id="pagerForm" data-toggle="ajaxsearch" action="/index.php/Admin/User/index.html?_=1468507032683" method="get">
-        <input type="hidden" name="pageSize" value="${model.pageSize}">
-        <input type="hidden" name="pageCurrent" value="${model.pageCurrent}">
-        <label>用户名/昵称：</label><input type="text" value="<?php echo ($username); ?>" name="name" class="form-control" size="15">&nbsp;    
-        
-        <button type="submit" class="btn-default" data-icon="search">查询</button>&nbsp;
-        <button type="button" class="btn btn-orange" data-icon="undo" onclick="$(this).navtab('refresh');" >刷新</button>&nbsp;
-        <button type="button" class="btn btn-green pull-right" data-icon="plus" data-toggle="dialog"
-        data-options="{id:'sc-addUser', url:'<?php echo U('User/add');?>', title:'添加菜单', width:750, height:400}">添加</button>
+    <form id="pagerForm" data-toggle="ajaxsearch" action="/index.php/Admin/User/index.html?_=1468544231768" method="get">
+        <div class="bjui-searchBar">
+            <input type="hidden" name="pageSize" value="${model.pageSize}">
+            <input type="hidden" name="pageCurrent" value="${model.pageCurrent}">
+            <label>用户名/昵称：</label><input type="text" value="<?php echo ($username); ?>" name="name" class="form-control" size="15">&nbsp;    
+            
+            <button type="submit" class="btn-default" data-icon="search">查询</button>&nbsp;
+            <button type="button" class="btn btn-orange" data-icon="undo" onclick="$(this).navtab('refresh');" >刷新</button>&nbsp;
+            <button type="button" class="btn btn-green pull-right" data-icon="plus" data-toggle="dialog"
+            data-options="{id:'sc-addUser', url:'<?php echo U('User/add');?>', title:'添加菜单', width:750, height:400}">添加</button>
+        </div>
     </form>
 </div>
 

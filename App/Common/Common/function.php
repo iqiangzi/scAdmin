@@ -86,6 +86,7 @@ function showStatus($status){
 	return $str;
 }
 
+//获取用户权限
 function getAuthRules(){
 	$id = is_login();
 	
@@ -93,4 +94,19 @@ function getAuthRules(){
 	$authRules = M('roles')->field('concat(catId) as rules')->where(array('id' => array('in', $roles['roles_id'])))->find();
 	$arr = array_unique(explode(',', $authRules['rules']));
 	return $arr;
+}
+
+/**
+ * 格式化字节大小
+ * @param  [int] $size       字节数
+ * @param  string $delimiter 数字和单位分隔符
+ * @return string            
+ */
+function format_bytes($size, $delimiter=''){
+	$tmpArr = array('B', 'KB', 'MB', 'GB', 'TB', 'PB');
+	for ($i=0; $size>1024 && $i<5; $i++) {
+		$size /= 1024;
+	}
+
+	return round($size, 2).$delimiter.$tmpArr[$i];
 }
