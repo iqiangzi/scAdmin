@@ -10,10 +10,10 @@
     }
 </script>
 <div class="bjui-pageContent">
-        <form action="/index.php/Admin/User/add.html?_=1468544231751" method="post" data-toggle="ajaxform" data-reload-navtab="true">
+        <form action="/index.php/Admin/User/add.html?_=1468656161703" method="post" data-toggle="ajaxform" data-reload-navtab="true">
             <table class="table table-condensed table-hover" width="100%">
                 <tbody>
-                    <tr>
+                    <!-- <tr>
                         <td>
                             <label class="control-label x85">用户组：</label>
                             <select name="roles_id[]" data-toggle="selectpicker" multiple="true" data-width="200">
@@ -21,12 +21,9 @@
                             </select>
                         </td>
                         <td>
-                            <label class="control-label x85">状态：</label>
-                            <input type="radio" name="status" value="1" data-toggle="icheck" data-label="开启" checked>
-                            &nbsp;
-                            <input type="radio" name="status" value="0" data-toggle="icheck" data-label="关闭">
+                            
                         </td>
-                    </tr>
+                    </tr> -->
                     <tr>
                         <td>
                             <label class="control-label x85">用户名：</label>
@@ -75,7 +72,10 @@
                             <span id="sc_manager_span_pic"></span>
                         </td>
                         <td>
-                            
+                            <label class="control-label x85">状态：</label>
+                            <input type="radio" name="status" value="1" data-toggle="icheck" data-label="开启" checked>
+                            &nbsp;
+                            <input type="radio" name="status" value="0" data-toggle="icheck" data-label="关闭">
                         </td>
                     </tr>
                     

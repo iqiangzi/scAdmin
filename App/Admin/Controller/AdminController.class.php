@@ -13,10 +13,10 @@ class AdminController extends Controller{
 
 	public function getMenu(){
 		if (in_array(is_login(), array(1, 2))) {   //超级管理员
-			$list = D('Category')->getTree(1, 1);
+			$list = D('AuthRule')->getTree(1, 1);
 		} else {
-			$list = D('Category')->getTree(1, 1, getAuthRules());
-		} 
+			$list = D('AuthRule')->getTree(1, 1, getAuthRules());
+		}
 		
 		return $list;
 	}

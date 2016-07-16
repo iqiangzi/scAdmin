@@ -1,0 +1,22 @@
+<div class="bjui-pageContent">
+        <form action="__SELF__" method="post" data-toggle="ajaxform" data-reload-navtab="true">
+        <table data-toggle="tablefixed" class="table" data-width="100%" data-nowrap="true">
+            <tbody>
+                <input type="hidden" name="uid" value="{$uid}">
+                <tr>
+                    <foreach name="ruleGroupList" item="v">
+                        <td><input type="checkbox" name="group_id[]" value="{$v.id}" data-toggle="icheck" data-label="{$v.title}"></td>
+                        <if condition="($key+1) % 4 EQ 0"></tr><tr></if>
+                    </foreach>
+                </tr>
+            </tbody>
+        </table>
+        </form>
+</div>
+
+<div class="bjui-pageFooter">
+    <ul>
+        <li><button type="button" class="btn-close" data-icon="close">取消</button></li>
+        <li><button type="submit" class="btn-default" data-icon="save">保存</button></li>
+    </ul>
+</div>

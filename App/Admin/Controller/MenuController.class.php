@@ -7,7 +7,7 @@ class MenuController extends AdminController{
 
 	public function __construct(){
 		parent::__construct();
-		$this->model = D('Category');
+		$this->model = D('AuthRule');
 	}
 
 	public function index(){

@@ -13,7 +13,7 @@
         <form action="<?php echo U('User/add');?>" method="post" data-toggle="ajaxform" data-reload-navtab="true">
             <table class="table table-condensed table-hover" width="100%">
                 <tbody>
-                    <tr>
+                    <!-- <tr>
                         <td>
                             <label class="control-label x85">用户组：</label>
                             <select name="roles_id[]" data-toggle="selectpicker" multiple="true" data-width="200">
@@ -26,7 +26,7 @@
                             &nbsp;
                             <input type="radio" name="status" value="0" data-toggle="icheck" data-label="关闭">
                         </td>
-                    </tr>
+                    </tr> -->
                     <tr>
                         <td>
                             <label class="control-label x85">用户名：</label>
@@ -41,11 +41,11 @@
                     <tr>
                         <td>
                             <label class="control-label x85">密码：</label>
-                            <input type="password" name="password">
+                            <input type="password" name="password" placeholder="********">
                         </td>
                         <td>
                             <label class="control-label x85">确认密码：</label>
-                            <input type="password" name="repassword">
+                            <input type="password" name="repassword" placeholder="********">
                         </td>
                     </tr>
                     <tr>
@@ -73,10 +73,13 @@
                             </div>
                             <input type="hidden" name="avator" value="<?php echo ($info["avator"]); ?>" id="sc_manager_pic">
                             <input type="hidden" name="id" value="<?php echo ($info["id"]); ?>">
-                            <span id="sc_manager_span_pic"><img src="<?php echo ($info["avator"]); ?>" alt="头像" width="100"></span>
+                            <span id="sc_manager_span_pic"><img src="<?php if($info['avator']): echo ($info["avator"]); else: ?>/Public/Admin/images/avator.png<?php endif; ?>" alt="头像" width="100" class="img-thumbnail"></span>
                         </td>
                         <td>
-                            
+                            <label class="control-label x85">状态：</label>
+                            <input type="radio" name="status" value="1" data-toggle="icheck" data-label="开启" checked>
+                            &nbsp;
+                            <input type="radio" name="status" value="0" data-toggle="icheck" data-label="关闭">
                         </td>
                     </tr>
                     

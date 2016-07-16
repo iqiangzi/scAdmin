@@ -10,7 +10,7 @@
 namespace Admin\Model;
 use Think\Model;
 
-class RolesModel extends Model{
+class AuthGroupModel extends Model{
 	private $_db;
 	//自动验证
 	protected $_validate = array(
@@ -21,7 +21,7 @@ class RolesModel extends Model{
 
 	public function __construct(){
 		parent::__construct();
-		$this->_db = M('roles');
+		$this->_db = M('auth_group');
 	}
 
 	//获取角色列表 $map => 查询条件

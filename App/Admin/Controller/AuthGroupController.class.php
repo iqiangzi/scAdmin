@@ -10,13 +10,13 @@
 namespace Admin\Controller;
 use Think\Controller;
 
-class RolesController extends AdminController{
+class AuthGroupController extends AdminController{
     //系统默认模型
     private $model;
 
     public function __construct(){
         parent::__construct();
-        $this->model = D('Roles');
+        $this->model = D('AuthGroup');
     }
 
     //列表(默认首页)
@@ -61,7 +61,7 @@ class RolesController extends AdminController{
             }
         } else {
             //所有栏目
-            $catList = D('Category')->getTree(1, 1);
+            $catList = D('AuthRule')->getTree(1, 1);
             $this->assign('catList', $catList);
             $this->display();
         }
@@ -83,7 +83,7 @@ class RolesController extends AdminController{
             }
         }
 
-        $catList = D('Category')->getTree(1, 1);
+        $catList = D('AuthRule')->getTree(1, 1);
         $this->assign('catList', $catList);
 
         $this->display();

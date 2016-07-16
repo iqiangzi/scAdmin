@@ -5,7 +5,7 @@
         <button type="button" class="btn btn-orange" data-icon="undo" onclick="$(this).navtab('refresh');" >刷新</button>
         &nbsp;
         <button type="button" class="btn btn-green pull-right" data-icon="plus" data-toggle="dialog"
-        data-options="{id:'sc-addRoles', url:'{:U('Roles/add')}', title:'添加菜单'}">添加</button>
+        data-options="{id:'sc-addRoles', url:'{:U('AuthGroup/add')}', title:'添加菜单'}">添加</button>
     </form>
 </div>
 
@@ -15,10 +15,10 @@
             <tr>
                 <th width="30">ID</th>
                 <th>用户组标题</th>
+                <th>描述</th>
                 <th>状态</th>
                 <th>排序</th>
-                <th>创建时间</th>
-                <th>更新时间</th>
+                
                 <th width="100">操作</th>
             </tr>
         </thead>
@@ -26,14 +26,14 @@
             <foreach name="rolesList" item="v" >
             <tr data-id="{$v.id}">
                 <td>{$v.id}</td>
-                <td>{$v.name}</td>
+                <td>{$v.title}</td>
+                <td>{$v.remark}</td>
                 <td>{$v.status|showStatus}</td>
                 <td>{$v.sort}</td>
-                <td>{$v.create_time|date='Y-m-d H:i:s',###}</td>
-                <td>{$v.update_time|date='Y-m-d H:i:s',###}</td>
+                
                 <td>
-                    <button type="button" class="btn btn-green" data-toggle="dialog" data-options="{id:'sc-editRoles{$v.id}', url:'{:U('Roles/edit')}?id={$v.id}', title:'编辑菜单'}">编辑</button>
-                    <a href="{:U('Roles/del')}?id={$v.id}" class="btn btn-red" data-toggle="doajax" data-confirm-msg="确定要删除该行信息吗？">删</a>
+                    <button type="button" class="btn btn-green" data-toggle="dialog" data-options="{id:'sc-editRoles{$v.id}', url:'{:U('AuthGroup/edit')}?id={$v.id}', title:'编辑菜单'}">编辑</button>
+                    <a href="{:U('AuthGroup/del')}?id={$v.id}" class="btn btn-red" data-toggle="doajax" data-confirm-msg="确定要删除该行信息吗？">删</a>
                 </td>
             </tr>
            </foreach>

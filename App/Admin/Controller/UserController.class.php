@@ -74,8 +74,6 @@ class UserController extends AdminController{
 				}
 			}
 		} else {
-			$rolesList = D('Roles')->getRoles(array('status' => 1));
-			$this->assign('rolesList', $rolesList);
 
 			$this->display();
 		}
@@ -95,10 +93,50 @@ class UserController extends AdminController{
             $this->assign('info', $info);
         }
 
-        $rolesList = D('Roles')->getRoles(array('status' => 1));
-		$this->assign('rolesList', $rolesList);
+       
 		
 		$this->display();
+	}
+
+	//用户授权
+	public function auth(){
+		if (IS_POST) {
+			$uid = I('post.uid', 0, 'intval');
+			if ($uid == 0) return show(300, '参数类型错误');
+
+			$table = M('auth_group_access');
+			$table->where(array('uid' => $uid))->delete();
+
+			$group_id = I('post.group_id');
+			foreach ($group_id as $v) {
+				$data['uid'] = $uid;
+				$data['group_id'] = $v;
+				$datas[] = $data;
+			}
+			//print_r($datas);return;
+			$result = $table->addAll($datas);
+			if (!$result) {
+				return show(300, '用户授权失败');
+			} else {
+				return show(200, '用户授权成功', true);
+			}
+			
+		} else {
+			//获取当前管理员ID
+			$uid = I('get.id', 0, 'intval');
+			if ($uid == 0) {
+				return show(300, '参数类型错误');
+			}
+			$this->assign('uid', $uid);
+
+			//获取所有用户组
+			$ruleGroupList = D('AuthGroup')->getRoles(array('status' => 1));
+			$times = ceil(count($ruleGroupList) / 4);
+			$this->assign('ruleGroupList', $ruleGroupList);
+			
+			$this->display();
+		}
+		
 	}
 
 	public function del(){

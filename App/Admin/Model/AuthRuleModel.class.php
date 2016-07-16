@@ -10,13 +10,13 @@
 namespace Admin\Model;
 use Think\Model;
 
-class CategoryModel extends Model{
+class AuthRuleModel extends Model{
 	//模型默认表
 	private $_db;
-	
+
 	public function __construct(){
 		parent::__construct();
-		$this->_db = M('category');
+		$this->_db = M('auth_rule');
 	}
 
 	/**
