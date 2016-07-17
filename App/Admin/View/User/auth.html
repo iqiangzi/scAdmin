@@ -1,11 +1,12 @@
 <div class="bjui-pageContent">
-        <form action="__SELF__" method="post" data-toggle="ajaxform" data-reload-navtab="true">
+        <form action="__SELF__" method="post" data-toggle="ajaxform">
         <table data-toggle="tablefixed" class="table" data-width="100%" data-nowrap="true">
             <tbody>
                 <input type="hidden" name="uid" value="{$uid}">
                 <tr>
                     <foreach name="ruleGroupList" item="v">
-                        <td><input type="checkbox" name="group_id[]" value="{$v.id}" data-toggle="icheck" data-label="{$v.title}"></td>
+                        <td><input type="checkbox" name="group_id[]" value="{$v.id}" data-toggle="icheck" data-label="{$v.title}"
+                        <if condition="in_array($v['id'], $authArr)">checked</if> ></td>
                         <if condition="($key+1) % 4 EQ 0"></tr><tr></if>
                     </foreach>
                 </tr>

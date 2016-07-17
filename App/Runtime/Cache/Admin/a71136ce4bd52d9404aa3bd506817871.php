@@ -1,5 +1,5 @@
 <?php if (!defined('THINK_PATH')) exit();?><div class="bjui-pageHeader">
-    <form id="pagerForm" data-toggle="ajaxsearch" action="/index.php/Admin/AuthGroup/index.html?_=1468660412728" method="post">
+    <form id="pagerForm" data-toggle="ajaxsearch" action="/index.php/Admin/AuthGroup/index.html?_=1468679492743" method="post">
         <label>用户组标题：</label><input type="text" value="<?php echo ($name); ?>" name="name" class="form-control" size="15">&nbsp;   
         <button type="submit" class="btn-default" data-icon="search">查询</button>&nbsp;
         <button type="button" class="btn btn-orange" data-icon="undo" onclick="$(this).navtab('refresh');" >刷新</button>

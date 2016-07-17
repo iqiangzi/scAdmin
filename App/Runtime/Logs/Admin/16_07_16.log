@@ -8083,3 +8083,1122 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
+[ 2016-07-16T22:31:16+08:00 ] 127.0.0.1 /index.php?m=Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001187s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001528s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) E:\www\scAdmin\App\Admin\Controller\IndexController.class.php 第 5 行.
+
+[ 2016-07-16T22:31:17+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001419s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000393s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000685s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035638s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035767s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.012749s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012833s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002739s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002833s ]
+
+[ 2016-07-16T22:31:18+08:00 ] 127.0.0.1 /index.php/Admin/Login/verify.html?t=1468679477247
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001392s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001578s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001713s ]
+
+[ 2016-07-16T22:31:24+08:00 ] 127.0.0.1 /index.php/Admin/Login/verify.html?t=1468679484700
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000715s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001356s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001897s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002169s ]
+
+[ 2016-07-16T22:31:31+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000876s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001622s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0732s ]
+SQL: SELECT * FROM `sc_manager` WHERE `username` = 'admin' AND `password` = 'bcf4416d91e580f3e229f3a2f6c736e1' AND `status` = 1 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2016-07-16T22:31:32+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000769s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001173s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001272s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) E:\www\scAdmin\App\Admin\Controller\IndexController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `sc_auth_rule` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `sc_auth_rule` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `sc_auth_rule` WHERE `type` = 1 AND `status` = 1 ORDER BY sort, id  [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001247s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001362s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084917s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085110s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001254s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004204s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004698s ]
+
+[ 2016-07-16T22:31:34+08:00 ] 127.0.0.1 /index.php/Admin/Index/index_layout.html?_=1468679492709
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000997s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001374s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) E:\www\scAdmin\App\Admin\Controller\IndexController.class.php 第 5 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000298s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000589s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078932s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079027s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002603s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002697s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003588s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003674s ]
+
+[ 2016-07-16T22:31:35+08:00 ] 127.0.0.1 /index.php/Admin/Index/images/group.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001047s ]
+
+[ 2016-07-16T22:31:35+08:00 ] 127.0.0.1 /index.php/Admin/Index/images/ewm.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002716s ]
+
+[ 2016-07-16T22:31:35+08:00 ] 127.0.0.1 /index.php/Admin/Index/git.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000961s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001833s ]
+NOTIC: [2048] Declaration of Admin\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) E:\www\scAdmin\App\Admin\Controller\IndexController.class.php 第 5 行.
+ERR: 非法操作:git
+
+[ 2016-07-16T22:31:39+08:00 ] 127.0.0.1 /index.php/Admin/AuthGroup/index.html?_=1468679492710
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003672s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002057s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `sc_auth_group` ORDER BY sort, id  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000311s ]
+NOTIC: [8] Undefined variable: name E:\www\scAdmin\App\Runtime\Cache\Admin\a71136ce4bd52d9404aa3bd506817871.php 第 3 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018138s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018237s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001631s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001747s ]
+
+[ 2016-07-16T22:31:45+08:00 ] 127.0.0.1 /index.php/Admin/User/index.html?_=1468679492711
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002170s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `sc_manager` LIMIT 0,30   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sc_manager` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+NOTIC: [8] Undefined variable: username E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 6 行.
+NOTIC: [8] Undefined index: last_login_ip E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 41 行.
+NOTIC: [8] Undefined index: last_login_ip E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 41 行.
+NOTIC: [8] Undefined index: last_login_ip E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 41 行.
+NOTIC: [8] Undefined index: last_login_ip E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016356s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016434s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001342s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001422s ]
+
+[ 2016-07-16T22:31:57+08:00 ] 127.0.0.1 /index.php/Admin/User/auth.html?id=7&_=1468679492712
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001782s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007785s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0076s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0083s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `sc_auth_group` WHERE `status` = 1 ORDER BY sort, id  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015593s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015694s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000918s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000990s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001247s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001323s ]
+
+[ 2016-07-16T22:32:38+08:00 ] 127.0.0.1 /index.php/Admin/User/auth.html?id=7&_=1468679492713
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001803s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003695s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `sc_auth_group` WHERE `status` = 1 ORDER BY sort, id  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049667s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049771s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001275s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001303s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001373s ]
+
+[ 2016-07-16T22:40:12+08:00 ] 127.0.0.1 /index.php/Admin/AuthGroup/index.html?_=1468679492714
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000904s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001459s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `sc_auth_group` ORDER BY sort, id  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Undefined variable: name E:\www\scAdmin\App\Runtime\Cache\Admin\a71136ce4bd52d9404aa3bd506817871.php 第 3 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025958s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026069s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002338s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002416s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001217s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001290s ]
+
+[ 2016-07-16T22:40:17+08:00 ] 127.0.0.1 /index.php/Admin/User/index.html?_=1468679492715
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000648s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001364s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `sc_manager` LIMIT 0,30   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sc_manager` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+NOTIC: [8] Undefined variable: username E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 6 行.
+NOTIC: [8] Undefined index: last_login_ip E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 41 行.
+NOTIC: [8] Undefined index: last_login_ip E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 41 行.
+NOTIC: [8] Undefined index: last_login_ip E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 41 行.
+NOTIC: [8] Undefined index: last_login_ip E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031405s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031497s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000942s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001138s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001205s ]
+
+[ 2016-07-16T22:40:19+08:00 ] 127.0.0.1 /index.php/Admin/User/auth.html?id=1&_=1468679492716
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000134s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000869s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007986s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group_access` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `sc_auth_group_access` WHERE `uid` = 1  [ RunTime:0.0254s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `sc_auth_group` WHERE `status` = 1 ORDER BY sort, id  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011696s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011922s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002080s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001185s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001255s ]
+
+[ 2016-07-16T22:41:43+08:00 ] 127.0.0.1 /index.php/Admin/User/auth.html?id=1&_=1468679492717
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001638s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001519s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group_access` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `sc_auth_group_access` WHERE `uid` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `sc_auth_group` WHERE `status` = 1 ORDER BY sort, id  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+NOTIC: [8] Array to string conversion E:\www\scAdmin\App\Runtime\Cache\Admin\c74c5af8a55bf02090dccf5417c29506.php 第 7 行.
+NOTIC: [8] Array to string conversion E:\www\scAdmin\App\Runtime\Cache\Admin\c74c5af8a55bf02090dccf5417c29506.php 第 7 行.
+NOTIC: [8] Array to string conversion E:\www\scAdmin\App\Runtime\Cache\Admin\c74c5af8a55bf02090dccf5417c29506.php 第 7 行.
+NOTIC: [8] Array to string conversion E:\www\scAdmin\App\Runtime\Cache\Admin\c74c5af8a55bf02090dccf5417c29506.php 第 7 行.
+NOTIC: [8] Array to string conversion E:\www\scAdmin\App\Runtime\Cache\Admin\c74c5af8a55bf02090dccf5417c29506.php 第 7 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012685s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012762s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000876s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000938s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001193s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001264s ]
+
+[ 2016-07-16T22:42:27+08:00 ] 127.0.0.1 /index.php/Admin/User/auth.html?id=1&_=1468679492718
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003341s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group_access` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `sc_auth_group_access` WHERE `uid` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `sc_auth_group` WHERE `status` = 1 ORDER BY sort, id  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+NOTIC: [8] Array to string conversion E:\www\scAdmin\App\Runtime\Cache\Admin\c74c5af8a55bf02090dccf5417c29506.php 第 7 行.
+NOTIC: [8] Array to string conversion E:\www\scAdmin\App\Runtime\Cache\Admin\c74c5af8a55bf02090dccf5417c29506.php 第 7 行.
+NOTIC: [8] Array to string conversion E:\www\scAdmin\App\Runtime\Cache\Admin\c74c5af8a55bf02090dccf5417c29506.php 第 7 行.
+NOTIC: [8] Array to string conversion E:\www\scAdmin\App\Runtime\Cache\Admin\c74c5af8a55bf02090dccf5417c29506.php 第 7 行.
+NOTIC: [8] Array to string conversion E:\www\scAdmin\App\Runtime\Cache\Admin\c74c5af8a55bf02090dccf5417c29506.php 第 7 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011382s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011456s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000836s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000894s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001269s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001343s ]
+
+[ 2016-07-16T22:42:54+08:00 ] 127.0.0.1 /index.php/Admin/User/auth.html?id=1&_=1468679492719
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001462s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group_access` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `sc_auth_group_access` WHERE `uid` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `sc_auth_group` WHERE `status` = 1 ORDER BY sort, id  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013390s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013493s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000879s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000946s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001162s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001232s ]
+
+[ 2016-07-16T22:43:56+08:00 ] 127.0.0.1 /index.php/Admin/User/auth.html?id=1&_=1468679492720
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000681s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001344s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group_access` [ RunTime:0.0045s ]
+SQL: SELECT `group_id` FROM `sc_auth_group_access` WHERE `uid` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `sc_auth_group` WHERE `status` = 1 ORDER BY sort, id  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012899s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001197s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001651s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001728s ]
+
+[ 2016-07-16T22:44:53+08:00 ] 127.0.0.1 /index.php/Admin/User/auth.html?id=1&_=1468679492721
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000711s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001380s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group_access` [ RunTime:0.0043s ]
+SQL: SELECT `group_id` FROM `sc_auth_group_access` WHERE `uid` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `sc_auth_group` WHERE `status` = 1 ORDER BY sort, id  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013944s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014036s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000831s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000894s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001155s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001225s ]
+
+[ 2016-07-16T22:45:17+08:00 ] 127.0.0.1 /index.php/Admin/User/auth.html?id=7&_=1468679492722
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000834s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001341s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group_access` [ RunTime:0.0041s ]
+SQL: SELECT `group_id` FROM `sc_auth_group_access` WHERE `uid` = 7  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `sc_auth_group` WHERE `status` = 1 ORDER BY sort, id  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013959s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014056s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000839s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001177s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001244s ]
+
+[ 2016-07-16T22:45:43+08:00 ] 127.0.0.1 /index.php/Admin/User/auth.html?id=7&_=1468679492723
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001401s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group_access` [ RunTime:0.0064s ]
+SQL: SELECT `group_id` FROM `sc_auth_group_access` WHERE `uid` = 7  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `sc_auth_group` WHERE `status` = 1 ORDER BY sort, id  [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013159s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013266s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003546s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003624s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001172s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001242s ]
+
+[ 2016-07-16T22:45:48+08:00 ] 127.0.0.1 /index.php/Admin/User/auth.html?id=7&_=1468679492723
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001239s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0086s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group_access` [ RunTime:0.0060s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\www\scAdmin\ThinkPHP\Library\Think\Model.class.php 第 511 行.
+SQL: DELETE FROM `sc_auth_group_access` WHERE `uid` = 7 [ RunTime:0.0529s ]
+SQL: INSERT INTO `sc_auth_group_access` (`uid`,`group_id`) VALUES ('7','1'),('7','2'),('7','3') [ RunTime:0.0334s ]
+
+[ 2016-07-16T22:45:50+08:00 ] 127.0.0.1 /index.php/Admin/User/index.html?_=1468679492724
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000804s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003626s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `sc_manager` LIMIT 0,30   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sc_manager` LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+NOTIC: [8] Undefined variable: username E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 6 行.
+NOTIC: [8] Undefined index: last_login_ip E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 41 行.
+NOTIC: [8] Undefined index: last_login_ip E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 41 行.
+NOTIC: [8] Undefined index: last_login_ip E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 41 行.
+NOTIC: [8] Undefined index: last_login_ip E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063962s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064050s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001293s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001221s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001298s ]
+
+[ 2016-07-16T22:46:01+08:00 ] 127.0.0.1 /index.php/Admin/User/auth.html?id=7&_=1468679492725
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001379s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0077s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group_access` [ RunTime:0.0061s ]
+SQL: SELECT `group_id` FROM `sc_auth_group_access` WHERE `uid` = 7  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `sc_auth_group` WHERE `status` = 1 ORDER BY sort, id  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011746s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011851s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000845s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001165s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001239s ]
+
+[ 2016-07-16T22:48:59+08:00 ] 127.0.0.1 /index.php/Admin/User/auth.html?id=1&_=1468679492726
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000684s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011575s ]
+
+[ 2016-07-16T22:49:23+08:00 ] 127.0.0.1 /index.php/Admin/User/auth.html?id=1&_=1468679492727
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001158s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001444s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group_access` [ RunTime:0.0042s ]
+SQL: SELECT `group_id` FROM `sc_auth_group_access` WHERE `uid` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `sc_auth_group` WHERE `status` = 1 ORDER BY sort, id  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012084s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012205s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000840s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000905s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001182s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001255s ]
+
+[ 2016-07-16T22:50:08+08:00 ] 127.0.0.1 /index.php/Admin/User/index.html?_=1468679492728
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000684s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001354s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `sc_manager` LIMIT 0,30   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sc_manager` LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+NOTIC: [8] Undefined variable: username E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 6 行.
+NOTIC: [8] Undefined index: last_login_ip E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 41 行.
+NOTIC: [8] Undefined index: last_login_ip E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 41 行.
+NOTIC: [8] Undefined index: last_login_ip E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 41 行.
+NOTIC: [8] Undefined index: last_login_ip E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015658s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015744s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001081s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001149s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001162s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001233s ]
+
+[ 2016-07-16T22:50:11+08:00 ] 127.0.0.1 /index.php/Admin/User/auth.html?id=1&_=1468679492729
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002579s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0082s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group_access` [ RunTime:0.0060s ]
+SQL: SELECT `group_id` FROM `sc_auth_group_access` WHERE `uid` = 1  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0102s ]
+SQL: SELECT * FROM `sc_auth_group` WHERE `status` = 1 ORDER BY sort, id  [ RunTime:0.0054s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012786s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012879s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000844s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001410s ]
+
+[ 2016-07-16T22:50:16+08:00 ] 127.0.0.1 /index.php/Admin/User/auth.html?id=7&_=1468679492730
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000926s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001726s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group_access` [ RunTime:0.0044s ]
+SQL: SELECT `group_id` FROM `sc_auth_group_access` WHERE `uid` = 7  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `sc_auth_group` WHERE `status` = 1 ORDER BY sort, id  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000345s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000443s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012020s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012120s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001391s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001434s ]
+
+[ 2016-07-16T22:50:26+08:00 ] 127.0.0.1 /index.php/Admin/User/auth.html?id=6&_=1468679492731
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000684s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001140s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001235s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group_access` [ RunTime:0.0042s ]
+SQL: SELECT `group_id` FROM `sc_auth_group_access` WHERE `uid` = 6  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `sc_auth_group` WHERE `status` = 1 ORDER BY sort, id  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012904s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012992s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000856s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000921s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001099s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001165s ]
+
+[ 2016-07-16T22:50:39+08:00 ] 127.0.0.1 /index.php/Admin/User/index.html?_=1468679492732
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000721s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001339s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `sc_manager` LIMIT 0,30   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sc_manager` LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+NOTIC: [8] Undefined variable: username E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 6 行.
+NOTIC: [8] Undefined index: last_login_ip E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 41 行.
+NOTIC: [8] Undefined index: last_login_ip E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 41 行.
+NOTIC: [8] Undefined index: last_login_ip E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 41 行.
+NOTIC: [8] Undefined index: last_login_ip E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016337s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016418s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000876s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000939s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001556s ]
+
+[ 2016-07-16T22:50:43+08:00 ] 127.0.0.1 /index.php/Admin/User/auth.html?id=1&_=1468679492733
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001224s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group_access` [ RunTime:0.0039s ]
+SQL: SELECT `group_id` FROM `sc_auth_group_access` WHERE `uid` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `sc_auth_group` WHERE `status` = 1 ORDER BY sort, id  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013456s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013564s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001466s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001544s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001297s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001372s ]
+
+[ 2016-07-16T22:50:47+08:00 ] 127.0.0.1 /index.php/Admin/User/auth.html?id=1&_=1468679492733
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000795s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001394s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0076s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group_access` [ RunTime:0.0054s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\www\scAdmin\ThinkPHP\Library\Think\Model.class.php 第 511 行.
+SQL: DELETE FROM `sc_auth_group_access` WHERE `uid` = 1 [ RunTime:0.0510s ]
+SQL: INSERT INTO `sc_auth_group_access` (`uid`,`group_id`) VALUES ('1','1'),('1','2'),('1','4') [ RunTime:0.0334s ]
+
+[ 2016-07-16T22:50:48+08:00 ] 127.0.0.1 /index.php/Admin/User/index.html?_=1468679492734
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001196s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `sc_manager` LIMIT 0,30   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sc_manager` LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000226s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000331s ]
+NOTIC: [8] Undefined variable: username E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 6 行.
+NOTIC: [8] Undefined index: last_login_ip E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 41 行.
+NOTIC: [8] Undefined index: last_login_ip E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 41 行.
+NOTIC: [8] Undefined index: last_login_ip E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 41 行.
+NOTIC: [8] Undefined index: last_login_ip E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018076s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018182s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001356s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001434s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001393s ]
+
+[ 2016-07-16T22:50:52+08:00 ] 127.0.0.1 /index.php/Admin/User/auth.html?id=1&_=1468679492735
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001419s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group_access` [ RunTime:0.0057s ]
+SQL: SELECT `group_id` FROM `sc_auth_group_access` WHERE `uid` = 1  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `sc_auth_group` WHERE `status` = 1 ORDER BY sort, id  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013360s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013473s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000893s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000965s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001312s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001400s ]
+
+[ 2016-07-16T22:51:13+08:00 ] 127.0.0.1 /index.php/Admin/User/index.html?_=1468679492736
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000755s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001912s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `sc_manager` LIMIT 0,30   [ RunTime:0.0038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sc_manager` LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+NOTIC: [8] Undefined variable: username E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 6 行.
+NOTIC: [8] Undefined index: last_login_ip E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 41 行.
+NOTIC: [8] Undefined index: last_login_ip E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 41 行.
+NOTIC: [8] Undefined index: last_login_ip E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 41 行.
+NOTIC: [8] Undefined index: last_login_ip E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017893s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017990s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001012s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003151s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003230s ]
+
+[ 2016-07-16T22:51:16+08:00 ] 127.0.0.1 /index.php/Admin/User/edit.html?id=1&_=1468679492737
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000678s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002749s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `sc_manager` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+NOTIC: [8] Undefined variable: rolesList E:\www\scAdmin\App\Runtime\Cache\Admin\713f7f55cab9404fc7f1012449a282d3.php 第 20 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037719s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000809s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000868s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001100s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001169s ]
+
+[ 2016-07-16T22:52:07+08:00 ] 127.0.0.1 /index.php/Admin/User/auth.html?id=1&_=1468679492738
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001430s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group_access` [ RunTime:0.0058s ]
+SQL: SELECT `group_id` FROM `sc_auth_group_access` WHERE `uid` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `sc_auth_group` WHERE `status` = 1 ORDER BY sort, id  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011810s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011901s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000966s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001037s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002744s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002828s ]
+
+[ 2016-07-16T22:52:26+08:00 ] 127.0.0.1 /index.php/Admin/User/auth.html?id=6&_=1468679492739
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001295s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0074s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group_access` [ RunTime:0.0055s ]
+SQL: SELECT `group_id` FROM `sc_auth_group_access` WHERE `uid` = 6  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `sc_auth_group` WHERE `status` = 1 ORDER BY sort, id  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012841s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012929s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000843s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001453s ]
+
+[ 2016-07-16T22:52:29+08:00 ] 127.0.0.1 /index.php/Admin/User/auth.html?id=6&_=1468679492739
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001151s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001238s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group_access` [ RunTime:0.0045s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\www\scAdmin\ThinkPHP\Library\Think\Model.class.php 第 511 行.
+SQL: DELETE FROM `sc_auth_group_access` WHERE `uid` = 6 [ RunTime:0.0004s ]
+SQL: INSERT INTO `sc_auth_group_access` (`uid`,`group_id`) VALUES ('6','3') [ RunTime:0.0584s ]
+
+[ 2016-07-16T22:52:30+08:00 ] 127.0.0.1 /index.php/Admin/User/index.html?_=1468679492740
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000731s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001470s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `sc_manager` LIMIT 0,30   [ RunTime:0.0047s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sc_manager` LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+NOTIC: [8] Undefined variable: username E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 6 行.
+NOTIC: [8] Undefined index: last_login_ip E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 41 行.
+NOTIC: [8] Undefined index: last_login_ip E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 41 行.
+NOTIC: [8] Undefined index: last_login_ip E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 41 行.
+NOTIC: [8] Undefined index: last_login_ip E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016100s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000972s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001035s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001105s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001170s ]
+
+[ 2016-07-16T22:52:52+08:00 ] 127.0.0.1 /index.php/Admin/User/index.html?_=1468679492741
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001551s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `sc_manager` LIMIT 0,30   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sc_manager` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+NOTIC: [8] Undefined variable: username E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 6 行.
+NOTIC: [8] Undefined index: last_login_ip E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 41 行.
+NOTIC: [8] Undefined index: last_login_ip E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 41 行.
+NOTIC: [8] Undefined index: last_login_ip E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 41 行.
+NOTIC: [8] Undefined index: last_login_ip E:\www\scAdmin\App\Runtime\Cache\Admin\4295d5db477f3199c8db51638416159f.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016539s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016611s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000850s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001063s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001125s ]
+
+[ 2016-07-16T22:52:55+08:00 ] 127.0.0.1 /index.php/Admin/User/auth.html?id=6&_=1468679492742
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000815s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002410s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group_access` [ RunTime:0.0044s ]
+SQL: SELECT `group_id` FROM `sc_auth_group_access` WHERE `uid` = 6  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `sc_auth_group` WHERE `status` = 1 ORDER BY sort, id  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012921s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013022s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000864s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000928s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001110s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001177s ]
+
+[ 2016-07-16T22:52:59+08:00 ] 127.0.0.1 /index.php/Admin/User/auth.html?id=6&_=1468679492742
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000892s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001303s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `sc_manager` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group_access` [ RunTime:0.0062s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\www\scAdmin\ThinkPHP\Library\Think\Model.class.php 第 511 行.
+SQL: DELETE FROM `sc_auth_group_access` WHERE `uid` = 6 [ RunTime:0.0502s ]
+SQL: INSERT INTO `sc_auth_group_access` (`uid`,`group_id`) VALUES ('6','2'),('6','3') [ RunTime:0.0381s ]
+
+[ 2016-07-16T22:53:10+08:00 ] 127.0.0.1 /index.php/Admin/AuthGroup/index.html?_=1468679492743
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001134s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001223s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `sc_auth_group` ORDER BY sort, id  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+NOTIC: [8] Undefined variable: name E:\www\scAdmin\App\Runtime\Cache\Admin\a71136ce4bd52d9404aa3bd506817871.php 第 3 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041474s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041558s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001352s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001286s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001378s ]
+
+[ 2016-07-16T22:53:14+08:00 ] 127.0.0.1 /index.php/Admin/AuthGroup/edit.html?id=3&_=1468679492744
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004112s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `sc_auth_group` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `sc_auth_group` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `sc_auth_rule` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `sc_auth_rule` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `sc_auth_rule` WHERE `type` = 1 AND `status` = 1 ORDER BY sort, id  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013298s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013402s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000876s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000938s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001344s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003552s ]
+

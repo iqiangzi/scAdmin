@@ -1,5 +1,5 @@
 <?php if (!defined('THINK_PATH')) exit();?><div class="bjui-pageHeader">
-    <form id="pagerForm" data-toggle="ajaxsearch" action="/index.php/Admin/User/index.html?_=1468660412768" method="get">
+    <form id="pagerForm" data-toggle="ajaxsearch" action="/index.php/Admin/User/index.html?_=1468679492741" method="get">
         <div class="bjui-searchBar">
             <input type="hidden" name="pageSize" value="${model.pageSize}">
             <input type="hidden" name="pageCurrent" value="${model.pageCurrent}">

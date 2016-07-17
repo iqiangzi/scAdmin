@@ -100,11 +100,12 @@ class UserController extends AdminController{
 
 	//用户授权
 	public function auth(){
+		$table = M('auth_group_access');
+
 		if (IS_POST) {
 			$uid = I('post.uid', 0, 'intval');
 			if ($uid == 0) return show(300, '参数类型错误');
 
-			$table = M('auth_group_access');
 			$table->where(array('uid' => $uid))->delete();
 
 			$group_id = I('post.group_id');
@@ -129,9 +130,20 @@ class UserController extends AdminController{
 			}
 			$this->assign('uid', $uid);
 
+			//获取用户权限
+			$authArr = array();
+			$authGroup = $table->field('group_id')->where(array('uid' => $uid))->select();
+			if ($authGroup && !empty($authGroup)) {
+				foreach ($authGroup as $v) {
+					$authArr[] = $v['group_id'];
+				}
+			}
+			
+			$this->assign('authArr', $authArr);
+			
 			//获取所有用户组
 			$ruleGroupList = D('AuthGroup')->getRoles(array('status' => 1));
-			$times = ceil(count($ruleGroupList) / 4);
+			
 			$this->assign('ruleGroupList', $ruleGroupList);
 			
 			$this->display();
